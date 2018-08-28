@@ -1,0 +1,8 @@
+1. Change location to the current directory
+2. in cmd,do "pip install -r requirement.txt"
+3.Put all the image files in the folder imagesplate.(location is flexible)
+4. Run the loop.py module.
+5. The detected lisence plates are saved in the "Plate.txt" file.
+6.Detected image files are moved to "Imagesread" folder.
+7.Thank You.!!!!
+ Note: Please install any additional modules required(if any),which is not included on the requirements.txt.

@@ -1,0 +1,16 @@
+Putting OPENCV=1 in makefile gives some errors:
+
+In case "Nopackage opencv found" error arises open terminal and type:
+export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig
+
+While having error in makefile "cannot find -lippicv"
+In terminal:
+find /usr/local/ -name "libippicv*"
+
+It returns position of lippicv.a then in terminal symlink that location to /usr/local/bin:
+sudo ln -s <location of lippicv.a> /usr/local/lib
+now make
+
+./darknet detector test cfg/obj.data cfg/yolo-voc.2.0.cfg yolo-voc_2000.weights image_name.png
+
+ 
